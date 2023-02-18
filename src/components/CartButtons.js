@@ -7,7 +7,7 @@ import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
 
 const CartButtons = () => {
-  const { closeSidebar } = useProductsContext;
+  const { closeSidebar } = useProductsContext();
   const { totalItems, clearCart } = useCartContext();
   const { loginWithRedirect, logout, myUser } = useUserContext();
 
